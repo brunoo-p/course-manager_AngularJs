@@ -3,19 +3,34 @@ import { Component, OnInit } from "@angular/core";
 import { Course } from "./course";
 
 @Component({
-  selector: 'app-course-list',
   templateUrl: './courses-list.components.html',
+  styleUrls: ['./courses-list.components.css']
 })
 
 export class CoursesListComponent implements OnInit{
 
-  constructor(private courseService : CourseService) {}
+    constructor(private courseService : CourseService) {}
 
-  titleApp = 'Courses Manager';
+    titleApp = 'Courses Manager';
 
-  courses: Course[] = [];
+    _filterBy: string = '';
+    _courses: Course[] = [];
 
-  ngOnInit() : void {
-    this.courses = this.courseService.retrieveAll();
-  }
+    filteredCourses : Course[]  = [];
+
+    ngOnInit() : void {
+        this._courses = this.courseService.retrieveAll();
+        this.filteredCourses = this._courses
+    }
+
+    set filter(value: string) {
+        this._filterBy = value;
+        this.filteredCourses = this._courses
+          .filter((course : Course) => course.name.toLocaleLowerCase()
+          .indexOf(this._filterBy.toLocaleLowerCase()) > -1);
+    }
+    get filter() {
+        return this._filterBy;
+    }
+
 }

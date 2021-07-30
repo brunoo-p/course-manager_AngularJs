@@ -1,0 +1,19 @@
+.options{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.edit, .delete{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.edit{
+  color:rgba(33, 86, 199, 0.842);
+}
+.delete{
+  color:rgb(252, 46, 46);
+}
