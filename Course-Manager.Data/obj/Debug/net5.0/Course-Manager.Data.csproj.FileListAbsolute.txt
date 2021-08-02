@@ -1,0 +1,15 @@
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\bin\Debug\net5.0\Course-Manager.Data.deps.json
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\bin\Debug\net5.0\Course-Manager.Data.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\bin\Debug\net5.0\ref\Course-Manager.Data.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\bin\Debug\net5.0\Course-Manager.Data.pdb
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\bin\Debug\net5.0\Course-Manager.Domain.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\bin\Debug\net5.0\Course-Manager.Domain.pdb
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.csproj.AssemblyReference.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.AssemblyInfoInputs.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.AssemblyInfo.cs
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.csproj.CoreCompileInputs.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.csproj.CopyComplete
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\ref\Course-Manager.Data.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.pdb

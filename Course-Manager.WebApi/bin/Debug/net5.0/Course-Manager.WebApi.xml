@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Course-Manager.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Course_Manager.WebApi.Controller.CourseController.AllCourses">
+            <summary>
+            Este endpoint busca todos os cursos cadastrados no sistema
+            </summary>
+            <returns>Retorna status 200 com um enumerado de cursos</returns>
+        </member>
+        <member name="M:Course_Manager.WebApi.Controller.CourseController.CourseById(System.Int32)">
+            <summary>
+            Faz uma busca pelo ID de um curso específico.
+            </summary>
+            <param name="id"></param>
+            <returns> Caso o curso seja encontrado retorna um status:200 com o curso. Se não encontrado retorna status:404</returns>
+        </member>
+        <member name="M:Course_Manager.WebApi.Controller.CourseController.AddCourse(Course_Manager.Domain.Entity.Course)">
+            <summary>
+            Para Adicionar um novo curso use este endpoint
+            </summary>
+            <param name="course"></param>
+            <returns>Retorna status:301 se tudo OK ou status:500 caso algum erro interno</returns>
+        </member>
+    </members>
+</doc>

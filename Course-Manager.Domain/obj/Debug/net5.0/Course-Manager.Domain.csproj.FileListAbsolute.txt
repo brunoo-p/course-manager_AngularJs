@@ -1,0 +1,12 @@
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\bin\Debug\net5.0\Course-Manager.Domain.deps.json
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\bin\Debug\net5.0\Course-Manager.Domain.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\bin\Debug\net5.0\ref\Course-Manager.Domain.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\bin\Debug\net5.0\Course-Manager.Domain.pdb
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\obj\Debug\net5.0\Course-Manager.Domain.csproj.AssemblyReference.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\obj\Debug\net5.0\Course-Manager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\obj\Debug\net5.0\Course-Manager.Domain.AssemblyInfoInputs.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\obj\Debug\net5.0\Course-Manager.Domain.AssemblyInfo.cs
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\obj\Debug\net5.0\Course-Manager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\obj\Debug\net5.0\Course-Manager.Domain.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\obj\Debug\net5.0\ref\Course-Manager.Domain.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Domain\obj\Debug\net5.0\Course-Manager.Domain.pdb

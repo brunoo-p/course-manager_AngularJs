@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Course-Manager.Data\Course-Manager.Data.csproj" />
+    <ProjectReference Include="..\Course-Manager.Domain\Course-Manager.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
