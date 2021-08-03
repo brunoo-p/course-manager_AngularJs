@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course-Manager.WebApi", "Course-Manager.WebApi.csproj", "{459F0AAA-C753-47DA-9909-73CC451F9C3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course-Manager.Domain", "..\Course-Manager.Domain\Course-Manager.Domain.csproj", "{AEEE4E1E-5461-4FFD-A555-28AF518F1E83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course-Manager.Domain", "..\Course-Manager.Domain\Course-Manager.Domain.csproj", "{AEEE4E1E-5461-4FFD-A555-28AF518F1E83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course_Manager.Service", "..\Course_Manager.Service\Course_Manager.Service.csproj", "{64EAF0D5-BD5A-4862-8104-54A221B54E96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course_Manager.Service", "..\Course_Manager.Service\Course_Manager.Service.csproj", "{64EAF0D5-BD5A-4862-8104-54A221B54E96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Course-Manager.Data", "..\Course-Manager.Data\Course-Manager.Data.csproj", "{D4FE85EC-06ED-4FB0-BEAB-171528B0E314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Course-Manager.Data", "..\Course-Manager.Data\Course-Manager.Data.csproj", "{D4FE85EC-06ED-4FB0-BEAB-171528B0E314}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

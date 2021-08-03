@@ -13,3 +13,6 @@ C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manage
 C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.dll
 C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\ref\Course-Manager.Data.dll
 C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.pdb
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\bin\Debug\net5.0\Course-Manager.Data.runtimeconfig.json
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\bin\Debug\net5.0\Course-Manager.Data.runtimeconfig.dev.json
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.Data\obj\Debug\net5.0\Course-Manager.Data.genruntimeconfig.cache

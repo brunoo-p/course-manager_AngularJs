@@ -1,6 +1,7 @@
 ﻿using Course_Manager.Data.Data;
 using Course_Manager.Domain.Entity;
 using Course_Manager.Domain.Interface;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,13 +17,15 @@ namespace Course_Manager.Service.Repository
         public CourseRepository(Context context)
         {
             _context = context;
+            var pendingMigration = _context.Database.GetPendingMigrations();
+
+            if ( pendingMigration.Any() ) _context.Database.Migrate();
         }
         public void Add( Course course )
         {
             try
             {
                 var newCourse = new Course(
-                    course.Id,
                     course.Name,
                     course.ImageUrl,
                     course.Price,
@@ -35,7 +38,7 @@ namespace Course_Manager.Service.Repository
                 ) { };
 
                 if(newCourse != null){
-                    _context.Add(newCourse);
+                    _context.Set<Course>().Add(newCourse);
                     _context.SaveChanges();
                 }
 
@@ -50,9 +53,14 @@ namespace Course_Manager.Service.Repository
         {
             try{
                 var course = GetById(id);
-                course.IsExcluded(true);
+                if (course == null){
 
+                    throw default;
+                }
+                
+                course.IsExcluded(true);
                 _context.SaveChanges();
+
             
             }catch( IndexOutOfRangeException ex )
             {
@@ -65,6 +73,10 @@ namespace Course_Manager.Service.Repository
             try{
 
                 return _context.Courses.Where( _ => _.IsDeleted == false ).ToList();
+            
+            }catch( Exception ex )
+            {
+                throw new Exception("err: ", ex);
             }
         }
 
@@ -84,17 +96,22 @@ namespace Course_Manager.Service.Repository
         public Course Update( int id, Course course )
         {
             try{
+                /*if ( id != course.Id ) return default;*/
 
-                var oldCourse = GetById(id);
-                var changed = _context.Remove(oldCourse);
-                Add(course);
+                var setCourse = GetById(id);
+                if(setCourse == null)
+                {
+                    return null;
+                }
+
+                setCourse.UpdateCourse(course);
                 
                 _context.SaveChanges();
 
-                return course;
+                return setCourse;
             }catch(Exception ex)
             {
-                throw new Exception("Error to Delete: ", ex);
+                throw new Exception("Error to Update: ", ex);
             }
         }
     }

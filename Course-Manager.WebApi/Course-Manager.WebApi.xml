@@ -6,9 +6,9 @@
     <members>
         <member name="M:Course_Manager.WebApi.Controller.CourseController.AllCourses">
             <summary>
-            Este endpoint busca todos os cursos cadastrados no sistema
+            Este endpoint busca todos os cursos cadastrados no sistema.
             </summary>
-            <returns>Retorna status 200 com um enumerado de cursos</returns>
+            <returns>Retorna status 200 com uma lista de cursos</returns>
         </member>
         <member name="M:Course_Manager.WebApi.Controller.CourseController.CourseById(System.Int32)">
             <summary>
@@ -21,8 +21,23 @@
             <summary>
             Para Adicionar um novo curso use este endpoint
             </summary>
-            <param name="course"></param>
+            <param name="course">Schema Course</param>
             <returns>Retorna status:301 se tudo OK ou status:500 caso algum erro interno</returns>
+        </member>
+        <member name="M:Course_Manager.WebApi.Controller.CourseController.DeleteCourse(System.Int32)">
+            <summary>
+            Delete um curso com este endpoint
+            </summary>
+            <param name="id"></param>
+            <returns>Se tudo bem devolve status:204. Caso ocorra um erro retorna status:500</returns>
+        </member>
+        <member name="M:Course_Manager.WebApi.Controller.CourseController.UpdateCourse(System.Int32,Course_Manager.Domain.Entity.Course)">
+            <summary>
+            Atualize um curso com este endpoint
+            </summary>
+            <param name="id"></param>
+            <param name="course"></param>
+            <returns>Retorna status:200 se tudo bem. status:500 se algo errado</returns>
         </member>
     </members>
 </doc>
