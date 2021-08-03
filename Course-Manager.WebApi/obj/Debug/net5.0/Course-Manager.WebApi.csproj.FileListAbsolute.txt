@@ -63,3 +63,7 @@ C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manage
 C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.WebApi\obj\Debug\net5.0\ref\Course-Manager.WebApi.dll
 C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.WebApi\obj\Debug\net5.0\Course-Manager.WebApi.pdb
 C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.WebApi\obj\Debug\net5.0\Course-Manager.WebApi.genruntimeconfig.cache
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.WebApi\bin\Debug\net5.0\Course_Manager.Service.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.WebApi\bin\Debug\net5.0\Course_Manager.Service.pdb
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.WebApi\bin\Debug\net5.0\Humanizer.dll
+C:\Users\bruno\OneDrive\Área de Trabalho\AngularJs\course-manager\Course-Manager.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

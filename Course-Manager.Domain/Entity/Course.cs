@@ -41,9 +41,8 @@ namespace Course_Manager.Domain.Entity
         public bool IsDeleted { get; private set; } = false;
 
 
-        public Course(int id, string name, string imageUrl, int price, string code, int duration, string releaseDate, string description, int rating, bool isDeleted)
+        public Course( string name, string imageUrl, int price, string code, int duration, string releaseDate, string description, int rating, bool isDeleted)
         {
-            Id = id;
             Name = name;
             ImageUrl = imageUrl;
             Price = price;
@@ -58,6 +57,19 @@ namespace Course_Manager.Domain.Entity
         public void IsExcluded(bool option)
         {
             IsDeleted = option; 
+        }
+
+        public void UpdateCourse(Course course)
+        {
+            Name = course.Name;
+            ImageUrl = course.ImageUrl;
+            Price = course.Price;
+            Code = course.Code;
+            Duration = course.Duration;
+            ReleaseDate = course.ReleaseDate;
+            Description = course.Description;
+            Rating = course.Rating;
+
         }
     }
 }

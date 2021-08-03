@@ -1,4 +1,5 @@
-﻿using Course_Manager.Domain.Entity;
+﻿using Course_Manager.Data.Mapping;
+using Course_Manager.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -7,11 +8,14 @@ namespace Course_Manager.Data.Data
 {
     public class Context : DbContext
     {
-        protected override void OnConfiguring( DbContextOptionsBuilder optionsBuilder )
+        protected override void OnModelCreating( ModelBuilder modelBuilder )
         {
-            optionsBuilder.UseSqlServer("string Database");
+            modelBuilder.ApplyConfiguration(new CourseMapping());
+            base.OnModelCreating(modelBuilder);
         }
+        public Context( DbContextOptions<Context> options ) : base( options ) { }
+        
+        
         public DbSet<Course> Courses { get; set; }
-        public Context(){ }  
     }
 }
