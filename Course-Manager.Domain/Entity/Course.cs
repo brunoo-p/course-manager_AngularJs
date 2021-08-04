@@ -18,7 +18,7 @@ namespace Course_Manager.Domain.Entity
 
 
         [Required(ErrorMessage = "Adicione um valor para o curso")]
-        public int Price { get; private set; }
+        public double Price { get; private set; }
 
 
         [Required(ErrorMessage = "Necessário um código")]
@@ -36,12 +36,12 @@ namespace Course_Manager.Domain.Entity
         [Required(ErrorMessage = "Deixe uma descrição sobre o curso")]
         public string  Description { get; private set; }
 
-        public int Rating { get; private set; } = 0;
+        public double Rating { get; private set; } = 0;
 
         public bool IsDeleted { get; private set; } = false;
 
 
-        public Course( string name, string imageUrl, int price, string code, int duration, string releaseDate, string description, int rating, bool isDeleted)
+        public Course( string name, string imageUrl, double price, string code, int duration, string releaseDate, string description, double rating, bool isDeleted)
         {
             Name = name;
             ImageUrl = imageUrl;

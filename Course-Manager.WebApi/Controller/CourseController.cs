@@ -1,6 +1,7 @@
 using Course_Manager.Domain.Entity;
 using Course_Manager.Domain.Interface;
 using Course_Manager.Service.Filter;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
@@ -9,6 +10,7 @@ using System.Collections.Generic;
 namespace Course_Manager.WebApi.Controller
 {
     [ApiController]
+    [EnableCors("Policy")]
     [Route("api/[controller]")]
     public class CourseController : ControllerBase
     {
@@ -111,10 +113,10 @@ namespace Course_Manager.WebApi.Controller
 
             if(setCourse == null){
 
-                return StatusCode(500, "Erro ao atualizar o curso");
+                return StatusCode(500, "Erro ao atualizar o curso.");
             }
 
-            return StatusCode(200, $"Curso atualizado com sucesso!");
+            return StatusCode(200, "Curso atualizado com sucesso!");
         }
     }
 }
