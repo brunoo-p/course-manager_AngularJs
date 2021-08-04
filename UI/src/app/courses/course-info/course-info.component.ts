@@ -1,7 +1,7 @@
 import { CourseService } from './../course.service';
 import { Course } from './../course';
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   templateUrl: './course-info.component.html'
@@ -9,7 +9,7 @@ import { ActivatedRoute } from "@angular/router";
 
 export class CourseInfoComponent implements OnInit {
 
-  constructor(private activateRoute : ActivatedRoute, private courseService : CourseService){ }
+  constructor(private activateRoute : ActivatedRoute, private courseService : CourseService, private router : Router){ }
 
   course! : Course;
 
@@ -24,7 +24,10 @@ export class CourseInfoComponent implements OnInit {
 
   save() : void {
     this.courseService.save(this.course).subscribe({
-      next: course => console.log("saved"),
+      next: course => {
+        this.router.navigate(['/courses']);
+        console.log(course);
+    },
       error: err => console.log("err", err)
     });
   }
