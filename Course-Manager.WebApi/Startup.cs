@@ -27,7 +27,7 @@ namespace Course_Manager.WebApi
         {
             services.AddCors(options => {
                 options.AddPolicy("Policy", builder => {
-                    builder.WithOrigins("http://localhost:4200")
+                    builder.WithOrigins("http://localhost:4200" )
                             .AllowAnyMethod()
                             .AllowAnyHeader();
                 });
