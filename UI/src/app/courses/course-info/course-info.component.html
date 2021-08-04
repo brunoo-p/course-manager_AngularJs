@@ -1,14 +1,14 @@
 <div class="container">
 
-  <h2>{{ course.name }}</h2>
+  <h2>{{ course?.name }}</h2>
   <h5 for="courseName"> Details </h5>
   <hr/>
 
-  <form #courseForm="ngForm">
+  <form #courseForm="ngForm" *ngIf="course">
     <div class="form-group row">
       <label class="col-sm-2 col-form-label">Change Name:</label>
 
-      <div class="col-sm-10">
+      <div class="col-sm-10" >
         <input
           [(ngModel)]="course.name"
           class="form-control"

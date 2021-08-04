@@ -5,8 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Course_Manager.Service.Repository
 {
@@ -26,15 +24,15 @@ namespace Course_Manager.Service.Repository
             try
             {
                 var newCourse = new Course(
-                    course.Name,
-                    course.ImageUrl,
-                    course.Price,
-                    course.Code,
-                    course.Duration,
-                    course.ReleaseDate,
-                    course.Description,
-                    course.Rating,
-                    course.IsDeleted
+                    name: course.Name,
+                    imageUrl: course.ImageUrl,
+                    price: course.Price,
+                    code: course.Code,
+                    duration: course.Duration,
+                    releaseDate: course.ReleaseDate,
+                    description: course.Description,
+                    rating: course.Rating,
+                    isDeleted: false
                 ) { };
 
                 if(newCourse != null){

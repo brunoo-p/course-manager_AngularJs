@@ -3,7 +3,6 @@ using Course_Manager.Domain.Interface;
 using Course_Manager.Service.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,7 +25,15 @@ namespace Course_Manager.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices( IServiceCollection services )
         {
+            services.AddCors(options => {
+                options.AddPolicy("Policy", builder => {
+                    builder.WithOrigins("http://localhost:4200")
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                });
+            });
             services.AddControllers();
+        
 
             services.AddDbContext<Context>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
@@ -67,6 +74,7 @@ namespace Course_Manager.WebApi
             });
 
             app.UseRouting();
+            app.UseCors("Policy");
 
             app.UseAuthorization();
 
